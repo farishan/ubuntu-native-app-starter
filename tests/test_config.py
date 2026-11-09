@@ -1,3 +1,5 @@
+# SPDX-License-Identifier: GPL-3.0-or-later
+# Copyright (C) 2026 Faris Han
 import os
 
 from native_app.config import AppConfig

@@ -1,3 +1,5 @@
+# SPDX-License-Identifier: GPL-3.0-or-later
+# Copyright (C) 2026 Faris Han
 """WebKit2GTK 4.0 webview helpers."""
 
 from __future__ import annotations

@@ -1,3 +1,5 @@
+# SPDX-License-Identifier: GPL-3.0-or-later
+# Copyright (C) 2026 Faris Han
 """JavaScript <-> Python bridge for the WebKit webview.
 
 The bridge is intentionally tiny and explicit: every message from the UI is

@@ -1,3 +1,5 @@
+# SPDX-License-Identifier: GPL-3.0-or-later
+# Copyright (C) 2026 Faris Han
 """Platform detection helpers.
 
 The starter targets Ubuntu 22.04+ on X11. Some features (desktop-level

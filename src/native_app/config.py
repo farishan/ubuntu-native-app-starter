@@ -1,3 +1,5 @@
+# SPDX-License-Identifier: GPL-3.0-or-later
+# Copyright (C) 2026 Faris Han
 """Configuration for the starter app.
 
 All values can be overridden with environment variables so the same binary
