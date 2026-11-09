@@ -147,4 +147,6 @@ PYTHONPATH=src pytest -q
 
 ## License
 
-MIT
+GPL-3.0-or-later (GNU General Public License v3 or later).
+
+See `LICENSE` for the full text. Copyright (C) 2026 Faris Han.
