@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Native App Starter</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Native Ubuntu App Starter</h1>
+    <p class="subtitle">Python 3 + GTK 3 + WebKit2GTK 4.0</p>
+  </header>
+
+  <main>
+    <section class="card">
+      <h2>Bridge demo</h2>
+      <p>Click the button to call into Python via the WebKit message handler.</p>
+      <button id="pingBtn">Ping Python</button>
+      <pre id="output">Waiting…</pre>
+    </section>
+
+    <section class="card">
+      <h2>Echo demo</h2>
+      <input id="echoInput" type="text" placeholder="Type something" />
+      <button id="echoBtn">Echo</button>
+      <pre id="echoOutput"></pre>
+    </section>
+  </main>
+
+  <footer>
+    <small>Starter v0.1.0 — edit <code>assets/</code> to build your UI.</small>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

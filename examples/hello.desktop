@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=Native App Starter
+Comment=Production-ready native Ubuntu desktop app starter
+Exec=python3 -m native_app
+Icon=applications-development
+Terminal=false
+Categories=Development;Utility;
+StartupNotify=true
