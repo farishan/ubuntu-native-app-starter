@@ -102,6 +102,11 @@ ubuntu-native-app-starter/
 
 ## Customization
 
+0. Design tokens come from `@farishan-labs/design-tokens` (FHL). `assets/tokens.css`
+   is a vendored copy of its generated CSS (variables prefixed `--ui-*`). To refresh
+   after updating the tokens package, replace `assets/tokens.css` with the latest
+   `dist/tokens.css` from `farishan-labs/design-tokens` and keep `style.css`
+   referencing the `--ui-*` variables.
 1. Edit `assets/index.html`, `style.css`, `app.js` for the UI.
 2. Register new bridge actions in `app.py` (`build_bridge`).
 3. Call Python from JS:

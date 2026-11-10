@@ -1,16 +1,17 @@
+/* FHL design tokens are loaded via tokens.css (see index.html). */
 :root {
-  --bg: #1e1e2e;
-  --card: #2a2a3c;
-  --fg: #e6e6f0;
-  --accent: #89b4fa;
-  --muted: #a6adc8;
+  --bg: var(--ui-color-bg-default);
+  --card: var(--ui-color-bg-muted);
+  --fg: var(--ui-color-fg-default);
+  --accent: var(--ui-color-accent-default);
+  --muted: var(--ui-color-fg-muted);
 }
 
 * { box-sizing: border-box; }
 
 body {
   margin: 0;
-  font-family: "Ubuntu", "Cantarell", system-ui, sans-serif;
+  font-family: var(--ui-font-family-sans);
   background: var(--bg);
   color: var(--fg);
   min-height: 100vh;
@@ -19,60 +20,62 @@ body {
 }
 
 header {
-  padding: 2rem 2rem 1rem;
+  padding: var(--ui-space-8) var(--ui-space-8) var(--ui-space-4);
 }
 
-h1 { margin: 0; font-size: 1.6rem; }
-.subtitle { color: var(--muted); margin: 0.25rem 0 0; }
+h1 { margin: 0; font-size: var(--ui-font-size-xl); }
+.subtitle { color: var(--muted); margin: var(--ui-space-1) 0 0; }
 
 main {
   flex: 1;
-  padding: 1rem 2rem 2rem;
+  padding: var(--ui-space-4) var(--ui-space-8) var(--ui-space-8);
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 1rem;
+  gap: var(--ui-space-4);
 }
 
 .card {
   background: var(--card);
-  border-radius: 12px;
-  padding: 1.25rem;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+  border-radius: var(--ui-radius-lg);
+  padding: var(--ui-space-4);
+  box-shadow: var(--ui-shadow-md);
 }
 
-.card h2 { margin-top: 0; font-size: 1.1rem; color: var(--accent); }
+.card h2 { margin-top: 0; font-size: var(--ui-font-size-lg); color: var(--accent); }
 
 button {
   background: var(--accent);
-  color: #1e1e2e;
+  color: var(--ui-color-accent-fg);
   border: none;
-  border-radius: 8px;
-  padding: 0.5rem 1rem;
-  font-weight: 600;
+  border-radius: var(--ui-radius-md);
+  padding: var(--ui-space-2) var(--ui-space-4);
+  font-weight: var(--ui-font-weight-semibold);
   cursor: pointer;
 }
+
 button:hover { filter: brightness(1.1); }
 
 input {
   width: 100%;
-  padding: 0.5rem;
-  margin: 0.5rem 0;
-  border-radius: 8px;
-  border: 1px solid #444;
-  background: #181825;
+  padding: var(--ui-space-2);
+  margin: var(--ui-space-2) 0;
+  border-radius: var(--ui-radius-md);
+  border: 1px solid var(--ui-color-border-default);
+  background: var(--ui-color-bg-muted);
   color: var(--fg);
 }
 
 pre {
-  background: #181825;
-  padding: 0.75rem;
-  border-radius: 8px;
+  background: var(--ui-color-bg-muted);
+  padding: var(--ui-space-3);
+  border-radius: var(--ui-radius-md);
   overflow: auto;
-  font-size: 0.85rem;
+  font-size: var(--ui-font-size-sm);
+  font-family: var(--ui-font-family-mono);
 }
 
 footer {
-  padding: 1rem 2rem;
+  padding: var(--ui-space-4) var(--ui-space-8);
   color: var(--muted);
-  font-size: 0.8rem;
+  font-size: var(--ui-font-size-xs);
 }

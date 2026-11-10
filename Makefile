@@ -17,5 +17,8 @@ smoke: lint
 install:
 	$(PYTHON) -m pip install --user .
 
+sync-tokens:
+	cp $${DESIGN_TOKENS_DIR:-../labs/design-tokens}/dist/tokens.css assets/tokens.css
+
 clean:
 	rm -rf build dist *.egg-info .pytest_cache __pycache__ src/*/__pycache__ tests/__pycache__
