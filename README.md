@@ -1,5 +1,8 @@
 # Ubuntu Native App Starter
 
+![License](https://img.shields.io/github/license/farishan/ubuntu-native-app-starter) ![Stars](https://img.shields.io/github/stars/farishan/ubuntu-native-app-starter)
+
+
 A **production-ready, minimal starter** for building native desktop
 applications on Ubuntu using:
 
@@ -155,3 +158,9 @@ PYTHONPATH=src pytest -q
 GPL-3.0-or-later (GNU General Public License v3 or later).
 
 See `LICENSE` for the full text. Copyright (C) 2026 Faris Han.
+
+## Installation
+
+```bash
+pip install ubuntu-native-app-starter
+```
